@@ -11,4 +11,26 @@ package it.xtphere.gestud.business.dto;
  */
 public class MateriaDTO {
     
+    private String nome;
+    private String voto;
+
+    public MateriaDTO() {
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getVoto() {
+        return voto;
+    }
+
+    public void setVoto(String voto) {
+        this.voto = voto;
+    }
+    
 }
