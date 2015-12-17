@@ -28,4 +28,33 @@ public class PianoDiStudi implements Serializable {
     
     @ManyToMany
     private List<Materia> materia;
+
+    public PianoDiStudi() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNomePianoDiStudi() {
+        return nomePianoDiStudi;
+    }
+
+    public void setNomePianoDiStudi(String nomePianoDiStudi) {
+        this.nomePianoDiStudi = nomePianoDiStudi;
+    }
+
+    public List<Materia> getMateria() {
+        return materia;
+    }
+
+    public void setMateria(List<Materia> materia) {
+        this.materia = materia;
+    }
+    
+    
 }
