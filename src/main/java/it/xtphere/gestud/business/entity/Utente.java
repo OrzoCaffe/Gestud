@@ -5,10 +5,79 @@
  */
 package it.xtphere.gestud.business.entity;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Version;
+
 /**
  *
  * @author xtphere
  */
-public class Utente {
+@Entity
+public class Utente implements Serializable{
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    
+    @Version
+    private int version;
+    
+    @Column
+    private String nome;
+    
+    @Column
+    private String cognome;
+    
+    @ManyToOne
+    private PianoDiStudio pianoDiStudio;
+
+    public Utente() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public void setVersion(int version) {
+        this.version = version;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public PianoDiStudio getPianoDiStudio() {
+        return pianoDiStudio;
+    }
+
+    public void setPianoDiStudio(PianoDiStudio pianoDiStudio) {
+        this.pianoDiStudio = pianoDiStudio;
+    }
 }
