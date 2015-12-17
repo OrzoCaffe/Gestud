@@ -76,7 +76,7 @@ public class Utente implements Serializable{
         return pianoDiStudi;
     }
 
-    public void setPianoDiStudio(PianoDiStudi pianoDiStudio) {
+    public void setPianoDiStudio(PianoDiStudi pianoDiStudi) {
         this.pianoDiStudi = pianoDiStudi;
     }
 }
