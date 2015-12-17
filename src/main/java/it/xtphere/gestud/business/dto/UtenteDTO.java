@@ -11,4 +11,34 @@ package it.xtphere.gestud.business.dto;
  */
 public class UtenteDTO {
     
+    private String nome;
+    private String cognome;
+    private PianoDiStudiDTO pianoDiStudi;
+
+    public UtenteDTO() {
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCognome() {
+        return cognome;
+    }
+
+    public void setCognome(String cognome) {
+        this.cognome = cognome;
+    }
+
+    public PianoDiStudiDTO getPianoDiStudi() {
+        return pianoDiStudi;
+    }
+
+    public void setPianoDiStudi(PianoDiStudiDTO pianoDiStudi) {
+        this.pianoDiStudi = pianoDiStudi;
+    }
 }
