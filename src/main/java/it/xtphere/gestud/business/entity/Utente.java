@@ -12,7 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Version;
 
 /**
@@ -36,7 +35,7 @@ public class Utente implements Serializable{
     private String cognome;
     
     @ManyToOne
-    private PianoDiStudio pianoDiStudio;
+    private PianoDiStudi pianoDiStudi;
 
     public Utente() {
     }
@@ -73,11 +72,11 @@ public class Utente implements Serializable{
         this.cognome = cognome;
     }
 
-    public PianoDiStudio getPianoDiStudio() {
-        return pianoDiStudio;
+    public PianoDiStudi getPianoDiStudio() {
+        return pianoDiStudi;
     }
 
-    public void setPianoDiStudio(PianoDiStudio pianoDiStudio) {
-        this.pianoDiStudio = pianoDiStudio;
+    public void setPianoDiStudio(PianoDiStudi pianoDiStudio) {
+        this.pianoDiStudi = pianoDiStudi;
     }
 }
