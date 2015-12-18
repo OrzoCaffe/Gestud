@@ -34,6 +34,15 @@ public class Utente implements Serializable{
     @Column
     private String cognome;
     
+    @Column
+    private boolean isAdmin;
+    
+    @Column
+    private String username;
+    
+    @Column
+    private String password;
+    
     @ManyToOne
     private PianoDiStudi pianoDiStudi;
 
@@ -72,11 +81,35 @@ public class Utente implements Serializable{
         this.cognome = cognome;
     }
 
-    public PianoDiStudi getPianoDiStudio() {
+    public boolean isIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public PianoDiStudi getPianoDiStudi() {
         return pianoDiStudi;
     }
 
-    public void setPianoDiStudio(PianoDiStudi pianoDiStudi) {
+    public void setPianoDiStudi(PianoDiStudi pianoDiStudi) {
         this.pianoDiStudi = pianoDiStudi;
+    } 
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
