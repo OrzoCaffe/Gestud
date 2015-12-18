@@ -6,7 +6,7 @@
 package it.xtphere.gestud.business.dto;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -16,8 +16,7 @@ public class ScuolaDTO implements Serializable{
     private String nomeUtente;
     private String cognomeUtente;
     private String nomePianoDiStudi;
-    private List<String> nomeMateria;
-    private List<Double> votoMateria;
+    private Map<String, Double> materia;
 
     public ScuolaDTO() {
     }
@@ -46,20 +45,14 @@ public class ScuolaDTO implements Serializable{
         this.nomePianoDiStudi = nomePianoDiStudi;
     }
 
-    public List<String> getNomeMateria() {
-        return nomeMateria;
+    public Map<String, Double> getMateria() {
+        return materia;
     }
 
-    public void setNomeMateria(List<String> nomeMateria) {
-        this.nomeMateria = nomeMateria;
+    public void setMateria(Map<String, Double> materia) {
+        this.materia = materia;
     }
 
-    public List<Double> getVotoMateria() {
-        return votoMateria;
-    }
-
-    public void setVotoMateria(List<Double> votoMateria) {
-        this.votoMateria = votoMateria;
-    }
+    
     
 }
