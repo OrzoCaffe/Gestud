@@ -44,6 +44,4 @@ public class Materia implements Serializable {
     public void setVoto(double voto) {
         this.voto = voto;
     }
-    
-    
 }

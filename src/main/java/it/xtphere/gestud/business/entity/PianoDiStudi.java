@@ -55,6 +55,4 @@ public class PianoDiStudi implements Serializable {
     public void setMateria(List<Materia> materia) {
         this.materia = materia;
     }
-    
-    
 }
