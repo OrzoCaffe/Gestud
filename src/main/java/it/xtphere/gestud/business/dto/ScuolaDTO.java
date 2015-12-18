@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package it.xtphere.gestud.business.entity;
+package it.xtphere.gestud.business.dto;
 
 import java.io.Serializable;
 import java.util.List;
