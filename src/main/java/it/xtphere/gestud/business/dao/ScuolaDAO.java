@@ -1,4 +1,4 @@
-package it.xtpere.gestud.business.boundary;
+package it.xtphere.gestud.business.dao;
 
 import it.xtphere.gestud.business.entity.Materia;
 import it.xtphere.gestud.business.entity.PianoDiStudi;
